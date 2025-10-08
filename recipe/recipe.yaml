@@ -1,6 +1,6 @@
 context:
   name: certbot-dns-google
-  version: "5.0.0"
+  version: "5.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: fc2d5bae2ca3571b14d2a34addad24cc7e0f338fb665bc3d59da76aaf121dcc1
+  sha256: 4a4af6d2889ea5204cb646b5e4dcd5401193664ee90aae8079ce8ab92410f519
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
 tests:
   - python:
       imports:
-      - certbot_dns_google
+        - certbot_dns_google
       pip_check: true
       python_version: ${{ python_min }}.*
 
