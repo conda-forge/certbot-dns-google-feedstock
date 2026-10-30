@@ -1,5 +1,5 @@
 context:
-  version: "5.8.0"
+  version: "5.9.0"
 
 package:
   name: certbot-dns-google
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/certbot-dns-google/certbot_dns_google-${{ version }}.tar.gz
-  sha256: fcff7da84fc86598f83e269609845737631a46a25ce6414a780c708766c400ca
+  sha256: 56d63da0b5cb017225db255545ee2109d986db09f6fd8215950cb557fe9a54cb
 
 build:
   noarch: python
